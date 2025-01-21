@@ -13,8 +13,8 @@ if(isset($_POST['savebtn'])){
         window.history.back();
         </script>";
         exit;
-    }elseif($project_details == null || !preg_match('/^[a-zA-Z0-9\s&]+$/', $project_details)){
-        echo "<script>alert('Invalid input. Please ensure the project details is filled and contains only letters, numbers, spaces, ampersands (&).');
+    }elseif($project_details == null || !preg_match('/^[a-zA-Z0-9\s&.,-]+$/', $project_details)){
+        echo "<script>alert('Invalid input. Please ensure the project details is filled and contains only letters, numbers, spaces, ampersands (&), commas, full stops, and dashes (-).');
         window.history.back();
         </script>";
         exit;
@@ -57,8 +57,8 @@ if(isset($_POST['editbtn'])){
         window.history.back();
         </script>";
         exit;
-    }elseif($project_details == null || !preg_match('/^[a-zA-Z0-9\-.,&\s]+$/', $project_details)){
-        echo "<script>alert('Invalid input. Please ensure the project details is filled and contains only letters, numbers, spaces, ampersands (&), comma (,), point (.).');
+    }elseif($project_details == null || !preg_match('/^[a-zA-Z0-9\s&.,-]+$/', $project_details)){
+        echo "<script>alert('Invalid input. Please ensure the project details is filled and contains only letters, numbers, spaces, ampersands (&), commas, full stops, and dashes (-).');
         window.history.back();
         </script>";
         exit;

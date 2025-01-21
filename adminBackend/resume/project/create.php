@@ -60,8 +60,8 @@
                                 <div class="col-lg-12">
                                     <div class="mb-3">
                                         <label for="productName" class="form-label">Project Details</label>
-                                        <input type="text" class="form-control" name="project_details" id="" placeholder=""
-                                            required>
+                                        <!-- <input type="text" class="form-control" name="project_details" id="" placeholder="" required> -->
+                                        <textarea class="form-control" name="project_details" id=""  cols="160" rows="10"></textarea>
                                     </div>
                                 </div>
 
