@@ -19,6 +19,10 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!-- aos -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!--what's app script-->
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-a84d2e4a-8eca-4134-bc22-f97e5576a852" data-elfsight-app-lazy></div>
 </body>
 
 </html>

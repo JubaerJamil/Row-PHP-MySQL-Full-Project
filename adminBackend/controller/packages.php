@@ -19,13 +19,13 @@ if(isset($_POST['savebtn'])){
     $popular = $_POST['popular'];
     $status = $_POST['status'];
 
-    if (empty($p_name) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_name) || strlen($p_name) > 191) {
-        echo "<script>alert('Invalid input. Please ensure the package name is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    if (empty($p_name) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_name) || strlen($p_name) > 191) {
+        echo "<script>alert('Invalid input. Please ensure the package name is filled, contains only letters, numbers, spaces and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_duration) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_duration) || strlen($p_duration) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package duration is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_duration) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_duration) || strlen($p_duration) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package duration is filled, contains only letters, numbers, spaces and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
@@ -39,38 +39,38 @@ if(isset($_POST['savebtn'])){
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_1) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_1) || strlen($p_c_1) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 01 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_1) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_1) || strlen($p_c_1) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 01 is filled, contains only letters, numbers, spaces and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_2) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_2) || strlen($p_c_2) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 02 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_2) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_2) || strlen($p_c_2) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 02 is filled, contains only letters, numbers, spaces and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_3) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_3) || strlen($p_c_3) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 03 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_3) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_3) || strlen($p_c_3) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 03 is filled, contains only letters, numbers, spaces and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_4) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_4) || strlen($p_c_4) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 04 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_4) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_4) || strlen($p_c_4) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 04 is filled, contains only letters, numbers, spaces and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_5) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_5) || strlen($p_c_5) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 05 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_5) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_5) || strlen($p_c_5) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 05 is filled, contains only letters, numbers, spaces and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_6) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_6) || strlen($p_c_6) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 06 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_6) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_6) || strlen($p_c_6) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 06 is filled, contains only letters, numbers, spaces and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_7) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_7) || strlen($p_c_7) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 07 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_7) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_7) || strlen($p_c_7) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 07 is filled, contains only letters, numbers, spaces and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
@@ -117,13 +117,13 @@ if(isset($_POST['updatebtn'])){
     $popular = $_POST['popular'];
     $status = $_POST['status'];
 
-    if (empty($p_name) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_name) || strlen($p_name) > 191) {
-        echo "<script>alert('Invalid input. Please ensure the package name is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    if (empty($p_name) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_name) || strlen($p_name) > 191) {
+        echo "<script>alert('Invalid input. Please ensure the package name is filled, contains only letters, numbers, spaces, and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_duration) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_duration) || strlen($p_duration) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package duration is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_duration) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_duration) || strlen($p_duration) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package duration is filled, contains only letters, numbers, spaces, and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
@@ -137,38 +137,38 @@ if(isset($_POST['updatebtn'])){
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_1) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_1) || strlen($p_c_1) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 01 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_1) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_1) || strlen($p_c_1) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 01 is filled, contains only letters, numbers, spaces, and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_2) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_2) || strlen($p_c_2) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 02 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_2) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_2) || strlen($p_c_2) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 02 is filled, contains only letters, numbers, spaces, and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_3) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_3) || strlen($p_c_3) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 03 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_3) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_3) || strlen($p_c_3) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 03 is filled, contains only letters, numbers, spaces, and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_4) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_4) || strlen($p_c_4) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 04 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_4) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_4) || strlen($p_c_4) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 04 is filled, contains only letters, numbers, spaces, and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_5) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_5) || strlen($p_c_5) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 05 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_5) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_5) || strlen($p_c_5) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 05 is filled, contains only letters, numbers, spaces, and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_6) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_6) || strlen($p_c_6) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 06 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_6) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_6) || strlen($p_c_6) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 06 is filled, contains only letters, numbers, spaces, and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;
-    }elseif(empty($p_c_7) || !preg_match('/^[a-zA-Z0-9\s&]+$/', $p_c_7) || strlen($p_c_7) > 191){
-        echo "<script>alert('Invalid input. Please ensure the package content 07 is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 191 characters.');
+    }elseif(empty($p_c_7) || !preg_match('/^[a-zA-Z0-9\s&(),\'\/]+$/', $p_c_7) || strlen($p_c_7) > 191){
+        echo "<script>alert('Invalid input. Please ensure the package content 07 is filled, contains only letters, numbers, spaces, and only use { & , ' () / }, and is less than 191 characters.');
         window.history.back();
         </script>";
         exit;

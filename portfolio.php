@@ -83,7 +83,7 @@
                         <div class="carousel-inner">
                           <?php foreach ($allImage as $imageKey => $image): ?>
                             <div class="carousel-item <?php echo $imageKey == 0 ? 'active' : ''; ?>">
-                              <img src="<?php echo "upload/project_img/" . $image['image']; ?>" class="d-block w-100"
+                              <img src="<?php echo "upload/project_Img/" . $image['image']; ?>" class="d-block w-100"
                                 alt="...">
                             </div>
                           <?php endforeach; ?>

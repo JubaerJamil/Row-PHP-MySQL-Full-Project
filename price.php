@@ -18,7 +18,7 @@
     <?php include 'layout/color_palettes.php';?>
 
 <?php
-  $query = "SELECT * FROM package_price WHERE status = 1 ORDER BY id DESC ";
+  $query = "SELECT * FROM package_price WHERE status = 1 ORDER BY id ASC ";
   $queryResult = mysqli_query($connection, $query);
   $allList = mysqli_fetch_all($queryResult, MYSQLI_ASSOC);
 
@@ -72,14 +72,14 @@
               <div class="popular-price px-2 px-md-5 py-1 py-md-3 py-xl-2 py-xxl-3 <?php echo $item['popular'] == 1 ? 'd-block' : 'd-none'; ?>" style="position: absolute;top: 32px;right: 0;left: 0;">
                   <span class="fs-seven n1-color">Most popular</span>
               </div>
-                <span class="fs-seven n5-color"><?php echo $item['p_name'];?></span>
+                <span class="fs-seven n5-color fw-bold"><?php echo $item['p_name'];?></span>
                 <div class="d-flex justify-content-center" style="margin-left: 90px;">
-                <h3 class="p1-color fs-two"><?php echo $item['p_price'] - $item['p_dis_amount'];?></h3>
+                <h3 class="p1-color fs-two"><span><i class="fa-solid fa-bangladeshi-taka-sign fs-3 me-1"></i></span><?php echo $item['p_price'] - $item['p_dis_amount'];?></h3>
 
                 <h5 class="p1-color ms-3 mb-5 <?php echo $item['have_dis'] == 1 ? 'd-block' : 'd-none'; ?>" style="color:rgb(243, 145, 138);text-decoration: line-through;"><?php echo $item['p_price'];?></h5>
 
                 </div>
-                <span class="fs-eight n5-color">Per Month</span>
+                <span class="fs-eight n5-color"><?php echo $item['p_duration'];?></span>
                 <div class="line-divider my-4 my-md-7"></div>
                 <ul>
                   <li class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3">

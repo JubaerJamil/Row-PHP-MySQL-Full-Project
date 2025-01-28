@@ -5,7 +5,7 @@
 <?php include '../../../config/connection.php'; ?>
 
 <?php 
-$categories = "SELECT * FROM portfolio_categories";
+$categories = "SELECT * FROM portfolio_categories WHERE status = 1";
 $categories_run = mysqli_query($connection,"$categories");
 
 $id = $_GET['id'];

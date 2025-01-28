@@ -60,7 +60,7 @@
             Online Resume
           </h3>
 
-          <a href="assets/images/resume.pdf"
+          <a href="assets/images/Jubaer Hossen Jamil.pdf"
             class="w-max primary-btn bg1-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"
             download>
             <i class="ph ph-file-pdf"></i>Download PDF Version
@@ -166,7 +166,7 @@
                   <div class="mb-4 mb-md-6">
                     <div class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center mb-2 mb-md-4">
                       <span class="p1-color fs-six fw-medium"><?php echo $project['project_name'];?></span>
-                      <a href="<?php echo $project['project_link'];?>" class="n42-color fs-eight">view</a>
+                      <a href="<?php echo $project['project_link'];?>" target="_blank" class="n42-color fs-eight">view</a>
                     </div>
                     <p class="n42-color fs-seven">
                       <?php echo $project['project_details'];?>

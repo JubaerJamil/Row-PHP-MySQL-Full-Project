@@ -27,7 +27,7 @@
             <div class="position-relative profile-img">
               <div class="user-bg"></div>
               <div class="bg-white">
-                <img src="assets/images/main.jpg" alt="user" class="user-img rounded" />
+                <img src="assets/images/jamil1.png" alt="user" class="user-img rounded" />
               </div>
             </div>
           </div>
@@ -42,14 +42,14 @@
             </div>
             <div class="d-flex align-items-center gap-2 gap-xl-4">
               <h2 class="display-two fw-semibold p1-color">
-                <span class="counter">10</span>
+                <span class="counter">8</span>
               </h2>
               <div class="line"></div>
               <span class="n5-color">Projects Completed</span>
             </div>
             <div class="d-flex align-items-center gap-2 gap-xl-4">
               <h2 class="display-two fw-semibold p1-color d-flex gap-1">
-                <span class="counter">15</span>
+                <span class="counter">5</span>
               </h2>
               <div class="line"></div>
               <span class="n5-color">Clients Worldwide</span>

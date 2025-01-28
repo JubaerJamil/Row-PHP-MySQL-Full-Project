@@ -7,7 +7,7 @@ if(isset($_POST['savebtn'])){
     $answer = trim($_POST['answer'] ?? '');
     $status = $_POST['status'];
 
-    if($question == null || !preg_match('/^[a-zA-Z0-9\s&?]+$/', $question) || strlen($question) > 255){
+    if($question == null || !preg_match('/^[a-zA-Z0-9\s&?,!]+$/', $question) || strlen($question) > 255){
         echo "<script>alert('Invalid input. Please ensure the question field is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 255 characters.');
         window.history.back();
         </script>";
@@ -46,7 +46,7 @@ if(isset($_POST['editbtn'])){
     $answer = trim($_POST['answer'] ?? '');
     $status = $_POST['status'];
 
-    if($question == null || !preg_match('/^[a-zA-Z0-9\s&?]+$/', $question) || strlen($question) > 255){
+    if($question == null || !preg_match('/^[a-zA-Z0-9\s&?,!]+$/', $question) || strlen($question) > 255){
         echo "<script>alert('Invalid input. Please ensure the question field is filled, contains only letters, numbers, spaces, ampersands (&), and is less than 255 characters.');
         window.history.back();
         </script>";

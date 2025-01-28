@@ -10,12 +10,17 @@
 // $allList = mysqli_fetch_all($queryResult, MYSQLI_ASSOC);
 
 $commentquery = "SELECT 
-                    blogs.*,
+                    blogs.id,
+                    blogs.title,
+                    blogs.image,
+                    blogs.content,
+                    blogs.subject,
+                    blogs.status,
                     COUNT(comments.id) AS comment_count
                 FROM blogs
                 LEFT JOIN comments
                 ON blogs.id = comments.post_id
-                GROUP BY blogs.id
+                GROUP BY blogs.id, blogs.title, blogs.image, blogs.content, blogs.subject, blogs.status
                 ORDER BY blogs.id DESC";
 $commentquery_run = mysqli_query($connection, $commentquery);
 $allList = mysqli_fetch_all($commentquery_run, MYSQLI_ASSOC);

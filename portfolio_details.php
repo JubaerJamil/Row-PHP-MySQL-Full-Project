@@ -79,7 +79,7 @@
                   </div>
                   <div>
                     <span class="n4-color fs-eight fw-medium d-block">Website</span>
-                    <a href="<?php echo $item['view_link']; ?>"
+                    <a href="<?php echo $item['view_link']; ?>" target="_blank"
                       class="n5-color fs-six fw-medium d-flex align-items-center gap-2">Live
                       preview <i class="ph-bold ph-arrow-right"></i></a>
                   </div>
