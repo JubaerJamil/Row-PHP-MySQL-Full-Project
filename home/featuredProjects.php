@@ -52,7 +52,7 @@ $allItem = mysqli_fetch_all($query_run, MYSQLI_ASSOC);
             <div class="carousel-inner">
               <?php foreach($allImage as $imageKey=>$mainImage):?>
                 <div class="carousel-item <?php echo $imageKey == 0 ? 'active' : '';?>">
-                    <img src="<?php echo BASE_URL."upload/project_Img/". $mainImage['image'];?>" class="d-block w-100" alt="...">
+                    <img src="<?php echo "upload/project_Img/". $mainImage['image'];?>" class="d-block w-100" alt="...">
                 </div>
               <?php endforeach; ?>
             </div>

@@ -2011,7 +2011,7 @@ input:-webkit-autofill:active {
   background-color: rgba(var(--n3), 1);
 }
 .accordion-section .header-area button::after {
-  content: "add";
+  content: "read";
   font-family: "Material Icons";
   z-index: 1;
   position: absolute;
@@ -2032,7 +2032,7 @@ input:-webkit-autofill:active {
   background-color: rgba(var(--p1), 1);
 }
 .accordion-section .active .header-area button::after {
-  content: "remove";
+  content: "close";
   transform: rotate(180deg);
 }
 .accordion-section .active .header-area .accordion-btn {
